@@ -2,6 +2,10 @@
 
 基于 MediaPipe + XGBoost + SHAP 的弹跳摸高分析工具。
 
+> **研究项目**: 基于计算机视觉与可解释机器学习的弹跳动作生物力学分析  
+> **项目状态**: 开发中  
+> **论文文档**: [docs/paper.md](docs/paper.md)
+
 ## 快速开始
 
 ### 1. 安装依赖
@@ -96,3 +100,35 @@ A: 调整 config.py 中的 smoothing_window
 
 **Q: 阶段检测不准？**
 A: 确保视频包含完整的站立→下蹲→起跳→落地过程
+
+## 文档
+
+| 文档 | 说明 |
+|------|------|
+| [docs/paper.md](docs/paper.md) | 完整论文（随项目迭代更新） |
+| [docs/progress.md](docs/progress.md) | 项目进度跟踪 |
+| [docs/data_collection_form.md](docs/data_collection_form.md) | 数据采集记录表 |
+| [docs/consent_form.md](docs/consent_form.md) | 知情同意书模板 |
+
+## 项目结构
+
+```
+jump_analysis/
+├── main.py              # 主程序入口
+├── core.py              # 核心处理模块（视频处理+特征提取）
+├── model.py             # XGBoost建模 + SHAP分析
+├── visualize.py         # 可视化模块
+├── config.py            # 配置参数
+├── test_mock.py         # 模拟测试
+├── requirements.txt     # 依赖列表
+├── README.md            # 说明文档
+└── docs/                # 文档目录
+    ├── paper.md         # 论文
+    ├── progress.md      # 进度跟踪
+    ├── data_collection_form.md  # 数据采集表
+    └── consent_form.md  # 知情同意书
+```
+
+## 许可证
+
+MIT License
