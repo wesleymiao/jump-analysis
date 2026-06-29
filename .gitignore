@@ -28,3 +28,9 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
+
+# build artifacts
+node_modules/
+formulas.json
+docs/paper.html
+*.pdf
